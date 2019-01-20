@@ -1,13 +1,13 @@
 <h2>Upcoming Gigs</h2>
 <ul>
   <% Gig.upcomings.each do |gig| %>
-    <li><%= gig.date %>, <%= gig.venue %>, <%= gig.location %></li>
+    <li><a href="<%= gig.url %>"><%= gig.date %>, <%= gig.venue %>, <%= gig.location %></a></li>
   <% end %>
 </ul>
 
 <h2>Past Gigs</h2>
 <ul>
   <% Gig.priors.each do |gig| %>
-    <li><%= gig.date %>, <%= gig.venue %>, <%= gig.location %></li>
+    <li><a href="<%= gig.url %>"><%= gig.date %>, <%= gig.venue %>, <%= gig.location %></a></li>
   <% end %>
 </ul>
